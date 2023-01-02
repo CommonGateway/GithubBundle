@@ -1,7 +1,7 @@
 <?php
 
 // src/Service/InstallationService.php
-namespace CommonGateway\PetStoreBundle\Service;
+namespace CommonGateway\GithubIntegration\Service;
 
 use App\Entity\DashboardCard;
 use App\Entity\Endpoint;
