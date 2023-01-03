@@ -1,0 +1,38 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/labels.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "Labels",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "format": "int64"
+        },
+        "node_id": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string",
+            "format": "uri"
+        },
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "color": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "default": {
+            "type": "boolean"
+        }
+    }
+}

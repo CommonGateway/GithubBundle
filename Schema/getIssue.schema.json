@@ -1,0 +1,19 @@
+{
+    "title": "Issue",
+    "description": "Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.",
+    "type": "object",
+    "properties": {
+        "accept": {
+            "type": "string",
+            "description": "Setting to aaplication/vnd.github+json is recommended."
+        },
+        "owner": {
+            "type": "string",
+            "description": "The account owner of the repository. The name is not case sensitive.",
+            "required": true
+        },
+        "repo": {
+            "type":
+        }
+    }
+}
