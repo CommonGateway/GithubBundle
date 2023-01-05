@@ -87,10 +87,24 @@
             ]
         },
         "assignees": {
-            "type": "array",
-            "nullable": true
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
+            }
         },
-        "milestone": {},
+        "milestone": {
+            "anyOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "$ref": "https://vng.opencatalogi.nl/schemas/milestone.schema.json"
+                }
+            ]
+        },
         "locked": {
             "type": "boolean"
         },
@@ -101,7 +115,9 @@
         "comments": {
             "type": "integer"
         },
-        "pull_request": {},
+        "pull_request": {
+            "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
+        },
         "closed_at": {
             "type": "string",
             "format": "date-time",
@@ -115,7 +131,16 @@
             "type": "string",
             "format": "date-time"
         },
-        "closed_by": {},
+        "closed_by": {
+            "anyOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
+                }
+            ]
+        },
         "author_association": {
             "type": "string",
             "title": "author_association",
