@@ -1,6 +1,6 @@
 {
-    "name": "common-gateway/github",
-    "description": "An example package for creating symfony flex bundles as plugins",
+    "name": "common-gateway/github-bundle",
+    "description": "A Github Symfony Flex bundle for CRUD operations for GitHub issues",
     "type": "symfony-bundle",
     "keywords": [
         "commongateway",
@@ -9,26 +9,26 @@
         "conduction",
         "symfony",
         "common-gateway-plugin",
-        "pet store"
+        "githubbundle"
     ],
     "homepage": "https://commongateway.nl",
     "license": "EUPL-1.2",
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.4",
-        "commongateway/corebundle": "dev-master"
+        "commongateway/corebundle": ">=0.0.1"
     },
     "require-dev": {
         "symfony/dependency-injection": "~3.4|~4.1|~5.0"
     },
     "autoload": {
         "psr-4": {
-            "CommonGateway\\Github\\": ""
+            "CommonGateway\\GithubBundle\\": ""
         }
     },
     "scripts": {
-        "post-package-install": "bin/console common-gateway/github",
-        "post-package-update": "bin/console common-gateway/github",
-        "post-package-uninstall": "bin/console common-gateway/github"
+        "post-package-install": "bin/console common-gateway:install github-bundle",
+        "post-package-update": "bin/console common-gateway:update github-bundle",
+        "post-package-uninstall": "bin/console common-gateway:uninstall github-bundle"
     }
 }
