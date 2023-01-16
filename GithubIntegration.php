@@ -1,9 +1,9 @@
 <?php
 // src/GithubIntegration.php
-namespace CommonGateway\GithubIntegration;
+namespace CommonGateway\GithubBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class GithubIntegration extends Bundle
+class GithubBundle extends Bundle
 {
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace CommonGateway\GithubIntegration\DependencyInjection;
+namespace CommonGateway\GithubBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

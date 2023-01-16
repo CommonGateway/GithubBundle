@@ -12,11 +12,11 @@ An example repository for creating php symfony flex bundles
 To execute the following command you will need [Composer](https://getcomposer.org/download/) or a dockerized installation which already has php and composer.
 
 U can install this plugin by installing with command:
-`composer require common-gateway/github-plugin-bundle:dev-main` or dockerized: `docker-compose exec php composer require common-gateway/github-plugin-bundle:dev-main`
+`composer require common-gateway/github-bundle:dev-main` or dockerized: `docker-compose exec php composer require common-gateway/github-bundle:dev-main`
 in the directory where your composer.json lives.
 
 If you also want to install the schemas as entities you can install them with command:
-`php bin/console commongateway:install common-gateway/github-plugin-bundle` or dockerized: `docker-compose exec php bin/console commongateway:install common-gateway/github-plugin-bundle`
+`php bin/console commongateway:install common-gateway/github-bundle` or dockerized: `docker-compose exec php bin/console commongateway:install common-gateway/github-bundle`
 
 ### Creating your own bundle
 
@@ -30,12 +30,12 @@ If you also want to install the schemas as entities you can install them with co
 To create your own symfony bundle. You can copy this repository for a fast start.
 
 1. Login on [GitHub](https://github.com)
-2. Use [this template](https://github.com/CommonGateway/GithubIntegration/generate)
+2. Use [this template](https://github.com/CommonGateway/Petstore/generate)
 3. Name your bundle (CamelCase)
 4. Press the green button `Create repository from template`
 5. Update file names and namespace to your fitting 
    - Open composer.json, and change the name to your fitting. The first word should be the namespace and the second the name of your bundle. Check the autoload field to be set accordingly. Note: this is kebab-case. Also read: [naming your package](https://packagist.org/about#naming-your-package)
-   - Open GithubBundle.php and change the Bundle name and namespace. The namespace should be the same as your package name in composer.json but in CamelCase. So common-gateway/github-plugin-bundle becomes CommonGateway/GithubIntegration
+   - Open PetStoreBundle.php and change the Bundle name and namespace. The namespace should be the same as your package name in composer.json but in CamelCase. So common-gateway/github-bundle becomes CommonGateway/GithubBundle
    - Rename the /Service and /ActionHandler accordingly (or delete if not used).
    - Rename the /DependencyInjection/GithubExtension.php to your BundleNameExtension.php
    - Rename the /Resources/config/services.yaml namespaces  
