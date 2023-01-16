@@ -1,16 +1,16 @@
 <?php
 
-namespace CommonGateway\PetStoreBundle\ActionHandler;
+namespace CommonGateway\GithubBundle\ActionHandler;
 
-use CommonGateway\PetStoreBundle\Service\PetStoreService;
+use CommonGateway\GithubBundle\Service\GithubService;
 
-class PetStoreHandler
+class GithubHandler
 {
-    private PetStoreService $petStoreService;
+    private GithubService $githubService;
 
-    public function __construct(PetStoreService $petStoreService)
+    public function __construct(GithubService $githubService)
     {
-        $this->petStoreService = $petStoreService;
+        $this->githubService = $githubService;
     }
 
     /**
@@ -23,7 +23,7 @@ class PetStoreHandler
         return [
             '$id'         => 'https://example.com/person.schema.json',
             '$schema'     => 'https://json-schema.org/draft/2020-12/schema',
-            'title'       => 'PetStore Action',
+            'title'       => 'Github Action',
             'description' => 'This handler returns a welcoming string',
             'required'    => [],
             'properties'  => [],
@@ -45,6 +45,6 @@ class PetStoreHandler
      */
     public function run(array $data, array $configuration): array
     {
-        return $this->petStoreService->petStoreHandler($data, $configuration);
+        return $this->githubService->githubHandler($data, $configuration);
     }
 }

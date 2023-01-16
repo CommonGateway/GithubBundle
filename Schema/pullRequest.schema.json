@@ -1,0 +1,50 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/pullRequest.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "Pull Request",
+    "type": "object",
+    "properties": {
+        "merged_at": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "format": "date-time"
+        },
+        "diff_url": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "format": "uri"
+        },
+        "html_url": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "format": "uri"
+        },
+        "patch_url": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "format": "uri"
+        },
+        "url": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "format": "uri"
+        }
+    },
+    "required": [
+        "diff_url",
+        "html_url",
+        "patch_url",
+        "url"
+    ]
+}

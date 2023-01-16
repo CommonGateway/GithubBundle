@@ -1,0 +1,107 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/milestone.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "Milestone",
+    "description": "A collection of related issues and pull requests.",
+    "type": "object",
+    "properties": {
+        "url": {
+            "type": "string",
+            "format": "uri"
+        },
+        "html_url": {
+            "type": "string",
+            "format": "uri"
+        },
+        "labels_url": {
+            "type": "string",
+            "format": "uri"
+        },
+        "id": {
+            "type": "integer"
+        },
+        "node_id": {
+            "type": "string"
+        },
+        "number": {
+            "type": "integer",
+            "description": "The number of the milestone."
+        },
+        "state": {
+            "type": "string",
+            "description": "The stae of the milestone.",
+            "enum": [
+                "open",
+                "closed"
+            ],
+            "default": "open"
+        },
+        "title": {
+            "type": "string",
+            "description": "The title of the milestone."
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creator": {
+            "anyOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
+                }
+            ]
+        },
+        "open_issues": {
+            "type": "integer"
+        },
+        "closed_issues": {
+            "type": "integer"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "updated_at": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "closed_at": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "format": "date-time"
+        },
+        "due_on": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "format": "date-time"
+        }
+    },
+    "required": [
+        "closed_issues",
+        "creator",
+        "description",
+        "due_on",
+        "closed_at",
+        "id",
+        "node_id",
+        "labels_url",
+        "html_url",
+        "number",
+        "open_issues",
+        "state",
+        "title",
+        "url",
+        "created_at",
+        "updated_at"
+    ]
+}

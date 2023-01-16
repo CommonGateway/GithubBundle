@@ -1,0 +1,427 @@
+{
+  "$id": "https://opencatalogi.nl/repository.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.1",
+  "title": "Repository",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "example": "1296269"
+    },
+    "node_id": {
+      "type": "string",
+      "example": "MDEwOlJlcG9zaXRvcnkxMjk2MjY5"
+    },
+    "name": {
+      "type": "string",
+      "example": "Hello-World",
+      "required": true,
+      "description": "The name of the repository."
+    },
+    "full_name": {
+      "type": "string",
+      "example": "octocat/Hello-World"
+    },
+    "owner": {
+      "$ref": "https://opencatalogi.nl/simpleUser.schema.json"
+    },
+    "private": {
+      "type": "boolean",
+      "description": "Whether the repository is private or public.",
+      "default": true
+    },
+    "html_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fork": {
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "archive_url": {
+      "type": "string"
+    },
+    "assignees_url": {
+      "type": "string"
+    },
+    "blobs_url": {
+      "type": "string"
+    },
+    "branches_url": {
+      "type": "string"
+    },
+    "collaborators_url": {
+      "type": "string"
+    },
+    "comments_url": {
+      "type": "string"
+    },
+    "commits_url": {
+      "type": "string"
+    },
+    "compare_url": {
+      "type": "string"
+    },
+    "contents_url": {
+      "type": "string"
+    },
+    "contributors_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "deployments_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "downloads_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "events_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "forks_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "git_commits_url": {
+      "type": "string"
+    },
+    "git_refs_url": {
+      "type": "string",
+      "format": "url"
+    },
+    "git_tags_url": {
+      "type": "string"
+    },
+    "git_url": {
+      "type": "string"
+    },
+    "issue_comment_url": {
+      "type": "string"
+    },
+    "issue_events_url": {
+      "type": "string"
+    },
+    "issues_url": {
+      "type": "string"
+    },
+    "keys_url": {
+      "type": "string"
+    },
+    "labels_url": {
+      "type": "string"
+    },
+    "languages_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "merges_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "milestones_url": {
+      "type": "string"
+    },
+    "notifications_url": {
+      "type": "string"
+    },
+    "pulls_url": {
+      "type": "string"
+    },
+    "releases_url": {
+      "type": "string"
+    },
+    "ssh_url": {
+      "type": "string"
+    },
+    "stargazers_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "statuses_url": {
+      "type": "string"
+    },
+    "subscribers_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "subscription_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "tags_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "teams_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "trees_url": {
+      "type": "string"
+    },
+    "clone_url": {
+      "type": "string"
+    },
+    "mirror_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "hooks_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "svn_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "homepage": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "organization": {},
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "forks": {
+      "type": "integer"
+    },
+    "forks_count": {
+      "type": "integer"
+    },
+    "stargazers_count": {
+      "type": "integer"
+    },
+    "watchers_count": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "integer",
+      "description": "The size of the repository. Size is calculated hourly. When a repository is initially created, the size is 0."
+    },
+    "default_branch": {
+      "type": "string",
+      "description": "The default branch of the repository."
+    },
+    "open_issues": {
+      "type": "integer"
+    },
+    "open_issues_count": {
+      "type": "integer"
+    },
+    "is_template": {
+      "type": "boolean",
+      "description": "Whether this repository acts as a template that can be used to generate new repositories.",
+      "default": false
+    },
+    "license": {},
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "has_issues": {
+      "type": "boolean",
+      "description": "Whether issues are enabled.",
+      "default": "true"
+    },
+    "has_projects": {
+      "type": "boolean",
+      "description": "Whether projects are enabled.",
+      "default": true
+    },
+    "has_wiki": {
+      "type": "boolean",
+      "description": "Whether the wiki is enabled.",
+      "default": true
+    },
+    "has_pages": {
+      "type": "boolean"
+    },
+    "has_downloads": {
+      "type": "boolean",
+      "description": "Whether downloads are enabled.",
+      "default": true
+    },
+    "has_discussions": {
+      "type": "boolean",
+      "description": "Whether discussions are enabled.",
+      "default": false
+    },
+    "archived": {
+      "type": "boolean",
+      "description": "Whether the repository is archived.",
+      "default": false
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "Returns whether or not this repository disabled."
+    },
+    "visibility": {
+      "type": "string",
+      "description": "The repository visibility: public, private, or internal.",
+      "default": "public",
+      "enum": [
+        "public",
+        "private",
+        "internal"
+      ]
+    },
+    "pushed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "permissions": {
+      "$ref": "https://vng.opencatalogi.nl/permissions.schema.json"
+    },
+    "allow_rebase_merge": {
+      "type": "boolean",
+      "description": "Whether to allow rebase merges for pull requests.",
+      "default": true
+    },
+    "template_repository": {},
+    "temp_clone_token": {
+      "type": "string"
+    },
+    "allow_squash_merge": {
+      "type": "boolean",
+      "description": "Whether to allow squash merges for pull requests.",
+      "default": true
+    },
+    "allow_auto_merge": {
+      "type": "boolean",
+      "description": "Whether to allow Auto-merge to be used on pull requests.",
+      "default": false
+    },
+    "delete_branch_on_merge": {
+      "type": "boolean",
+      "description": "Whether to delete head branches when pull requests are merged.",
+      "default": false
+    },
+    "allow_merge_commit": {
+      "type": "boolean",
+      "description": "Whether to allow merge commits for pull requests.",
+      "default": true
+    },
+    "subscribers_count": {
+      "type": "integer"
+    },
+    "network_count": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "archive_url",
+    "assignees_url",
+    "blobs_url",
+    "branches_url",
+    "collaborators_url",
+    "comments_url",
+    "commits_url",
+    "compare_url",
+    "contents_url",
+    "contributors_url",
+    "deployments_url",
+    "description",
+    "downloads_url",
+    "events_url",
+    "fork",
+    "forks_url",
+    "full_name",
+    "git_commits_url",
+    "git_refs_url",
+    "git_tags_url",
+    "hooks_url",
+    "html_url",
+    "id",
+    "node_id",
+    "issue_comment_url",
+    "issue_events_url",
+    "issues_url",
+    "keys_url",
+    "labels_url",
+    "languages_url",
+    "merges_url",
+    "milestones_url",
+    "name",
+    "notifications_url",
+    "owner",
+    "private",
+    "pulls_url",
+    "releases_url",
+    "stargazers_url",
+    "statuses_url",
+    "subscribers_url",
+    "subscription_url",
+    "tags_url",
+    "teams_url",
+    "trees_url",
+    "url",
+    "clone_url",
+    "default_branch",
+    "forks",
+    "forks_count",
+    "git_url",
+    "has_downloads",
+    "has_issues",
+    "has_projects",
+    "has_wiki",
+    "has_pages",
+    "homepage",
+    "language",
+    "archived",
+    "disabled",
+    "mirror_url",
+    "open_issues",
+    "open_issues_count",
+    "license",
+    "pushed_at",
+    "size",
+    "ssh_url",
+    "stargazers_count",
+    "svn_url",
+    "watchers",
+    "watchers_count",
+    "created_at",
+    "updated_at"
+  ]
+}
