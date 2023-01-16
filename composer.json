@@ -1,6 +1,6 @@
 {
     "name": "common-gateway/github-bundle",
-    "description": "An Github symfony flex bundle for CRUD issues",
+    "description": "An Github Symfony Flex bundle for CRUD operations for GitHub issues",
     "type": "symfony-bundle",
     "keywords": [
         "commongateway",
@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.4",
-        "commongateway/corebundle": "dev-master"
+        "commongateway/corebundle": ">=0.0.1"
     },
     "require-dev": {
         "symfony/dependency-injection": "~3.4|~4.1|~5.0"
@@ -27,8 +27,8 @@
         }
     },
     "scripts": {
-        "post-package-install": "bin/console common-gateway/github-bundle",
-        "post-package-update": "bin/console common-gateway/github-bundle",
-        "post-package-uninstall": "bin/console common-gateway/github-bundle"
+        "post-package-install": "bin/console common-gateway:install github-bundle",
+        "post-package-update": "bin/console common-gateway:update github-bundle",
+        "post-package-uninstall": "bin/console common-gateway:uninstall github-bundle"
     }
 }
