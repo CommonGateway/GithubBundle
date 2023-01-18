@@ -53,57 +53,22 @@
             "description": "Contents of the issue"
         },
         "user": {
-            "anyOf": [
-                {
-                    "type": "null"
-                },
-                {
-                    "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
-                }
-            ]
+          "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
+          "nullable": true
         },
         "labels": {
-            "type": "array",
             "description": "Labels to associate with this issue; pass one or more label names to replace the set of labels on this issue; send an empty array to clear all labels from the issue; note that the labels are silently dropped for users without push access to the repository",
-            "items": {
-                "oneOf": [
-                    {
-                        "type": "string"
-                    },
-                    {
-                        "$ref": "https://vng.opencatalogi.nl/schemas/labels.schema.json"
-                    }
-                ]
-            }
+            "$ref": "https://opencatalogi.nl/labels.schema.json"
         },
         "assignee": {
-            "anyOf": [
-                {
-                    "type": "null"
-                },
-                {
-                    "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
-                }
-            ]
+            "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
+            "nullable":true
         },
         "assignees": {
-            "type": [
-                "array",
-                "null"
-            ],
-            "items": {
-                "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
-            }
+          "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
         },
         "milestone": {
-            "anyOf": [
-                {
-                    "type": "null"
-                },
-                {
-                    "$ref": "https://vng.opencatalogi.nl/schemas/milestone.schema.json"
-                }
-            ]
+            "$ref": "https://opencatalogi.nl/milestone.schema.json"
         },
         "locked": {
             "type": "boolean"
@@ -116,7 +81,7 @@
             "type": "integer"
         },
         "pull_request": {
-            "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
+            "$ref": "https://opencatalogi.nl/simpleUser.schema.json"
         },
         "closed_at": {
             "type": "string",
@@ -132,14 +97,8 @@
             "format": "date-time"
         },
         "closed_by": {
-            "anyOf": [
-                {
-                    "type": "null"
-                },
-                {
-                    "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
-                }
-            ]
+            "$ref": "https://opencatalogi.nl/schemas/simpleUser.schema.json",
+            "nullable":true
         },
         "author_association": {
             "type": "string",
@@ -163,8 +122,7 @@
             "enum": [
                 "completed",
                 "reopened",
-                "not_planned",
-                null
+                "not_planned"
             ]
         }
     }
