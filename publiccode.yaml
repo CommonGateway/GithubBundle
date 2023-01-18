@@ -1,16 +1,16 @@
 publiccodeYmlVersion: "0.1"
-name: "GithubIntegration"
+name: "Github"
 url: "https://github.com/CommonGateway/GithubIntegration"
 releaseDate: "2022-10-01"
 softwareType: addon
 
 platforms:
   - web
-  
+
 categories:
   - collaboration
   - it-development
-  
+
 developmentStatus: beta
 description:
   nl:

@@ -2,7 +2,7 @@
 
 // src/Service/GithubService.php
 
-namespace CommonGateway\GithubIntegration\Service;
+namespace CommonGateway\Github\Service;
 
 class GithubService
 {

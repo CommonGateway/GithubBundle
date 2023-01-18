@@ -1,0 +1,29 @@
+{
+    "$id": "https://opencatalogi.nl/permissions.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "Permissions",
+    "type": "object",
+    "properties": {
+        "admin": {
+            "type": "boolean"
+        },
+        "pull": {
+            "type": "boolean"
+        },
+        "triage": {
+            "type": "boolean"
+        },
+        "push": {
+            "type": "boolean"
+        },
+        "maintain": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "admin",
+        "pull",
+        "push"
+    ]
+}

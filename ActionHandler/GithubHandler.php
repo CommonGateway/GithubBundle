@@ -1,8 +1,8 @@
 <?php
 
-namespace CommonGateway\GithubIntegration\ActionHandler;
+namespace CommonGateway\GithubBundle\ActionHandler;
 
-use CommonGateway\GithubIntegration\Service\GithubService;
+use CommonGateway\GithubBundle\Service\GithubService;
 
 class GithubHandler
 {

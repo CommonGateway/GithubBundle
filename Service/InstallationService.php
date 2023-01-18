@@ -1,7 +1,7 @@
 <?php
 
 // src/Service/InstallationService.php
-namespace CommonGateway\GithubIntegration\Service;
+namespace CommonGateway\Github\Service;
 
 use App\Entity\DashboardCard;
 use App\Entity\Endpoint;
