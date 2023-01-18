@@ -53,19 +53,17 @@
             "description": "Contents of the issue"
         },
         "user": {
-          "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
-          "nullable": true
+          "$ref": "https://opencatalogi.nl/simpleUser.schema.json"
         },
         "labels": {
             "description": "Labels to associate with this issue; pass one or more label names to replace the set of labels on this issue; send an empty array to clear all labels from the issue; note that the labels are silently dropped for users without push access to the repository",
             "$ref": "https://opencatalogi.nl/labels.schema.json"
         },
         "assignee": {
-            "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
-            "nullable":true
+            "$ref": "https://opencatalogi.nl/simpleUser.schema.json"
         },
         "assignees": {
-          "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
+          "$ref": "https://opencatalogi.nl/simpleUser.schema.json"
         },
         "milestone": {
             "$ref": "https://opencatalogi.nl/milestone.schema.json"
@@ -97,8 +95,7 @@
             "format": "date-time"
         },
         "closed_by": {
-            "$ref": "https://opencatalogi.nl/schemas/simpleUser.schema.json",
-            "nullable":true
+            "$ref": "https://opencatalogi.nl/schemas/simpleUser.schema.json"
         },
         "author_association": {
             "type": "string",

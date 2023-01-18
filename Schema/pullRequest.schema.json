@@ -6,39 +6,33 @@
     "type": "object",
     "properties": {
         "merged_at": {
-            "type": [
-                "string",
-                "null"
-            ],
-            "format": "date-time"
+            "type": "string",
+            "format": "date-time",
+            "nullable":true
         },
         "diff_url": {
-            "type": [
-                "string",
-                "null"
-            ],
-            "format": "uri"
+            "type": "string",
+            "format": "uri",
+            "nullable":true,
+            "required":true
         },
         "html_url": {
-            "type": [
-                "string",
-                "null"
-            ],
-            "format": "uri"
+            "type":"string",
+            "format": "uri",
+            "nullable":true,
+            "required":true
         },
         "patch_url": {
-            "type": [
-                "string",
-                "null"
-            ],
-            "format": "uri"
+            "type": "string",
+            "format": "uri",
+            "nullable":true,
+            "required":true
         },
         "url": {
-            "type": [
-                "string",
-                "null"
-            ],
-            "format": "uri"
+            "type": "string",
+            "format": "uri",
+            "nullable":true,
+            "required":true
         }
     },
     "required": [

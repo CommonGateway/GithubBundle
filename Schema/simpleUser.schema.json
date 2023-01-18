@@ -7,16 +7,12 @@
     "type": "object",
     "properties": {
         "name": {
-            "type": [
-                "string",
-                "null"
-            ]
+            "type": "string",
+            "nullable": true  
         },
         "email": {
-            "type": [
-                "string",
-                "null"
-            ]
+            "type": "string",
+            "nullable": true
         },
         "login": {
             "type": "string"
@@ -32,10 +28,8 @@
             "format": "uri"
         },
         "gravatar_id": {
-            "type": [
-                "string",
-                "null"
-            ]
+            "type": "string",
+            "nullable": true
         },
         "url": {
             "type": "string",
@@ -86,25 +80,5 @@
         "starred_at": {
             "type": "string"
         }
-    },
-    "required": [
-        "avatar_url",
-        "events_url",
-        "followers_url",
-        "following_url",
-        "gists_url",
-        "gravatar_id",
-        "html_url",
-        "id",
-        "node_id",
-        "login",
-        "organizations_url",
-        "received_events_url",
-        "repos_url",
-        "site_admin",
-        "starred_url",
-        "subscriptions_url",
-        "type",
-        "url"
-    ]
+    }
 }

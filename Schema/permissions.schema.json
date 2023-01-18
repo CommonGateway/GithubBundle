@@ -6,16 +6,19 @@
     "type": "object",
     "properties": {
         "admin": {
-            "type": "boolean"
+            "type": "boolean",
+            "required": true
         },
         "pull": {
-            "type": "boolean"
+            "type": "boolean",
+            "required": true
         },
         "triage": {
             "type": "boolean"
         },
         "push": {
-            "type": "boolean"
+            "type": "boolean",
+            "required": true
         },
         "maintain": {
             "type": "boolean"
