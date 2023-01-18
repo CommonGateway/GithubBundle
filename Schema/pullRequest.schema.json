@@ -1,5 +1,5 @@
 {
-    "$id": "https://vng.opencatalogi.nl/schemas/pullRequest.schema.json",
+    "$id": "https://opencatalogi.nl/pullRequest.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
     "title": "Pull Request",
