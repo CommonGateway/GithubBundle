@@ -2,7 +2,7 @@
     "$id": "https://opencatalogi.nl/issue.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "title": "List Repository Issues",
+    "title": "Issue Schema",
     "description": "Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.",
     "type": "object",
     "properties": {
@@ -53,8 +53,8 @@
             "description": "Contents of the issue"
         },
         "user": {
-          "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
-          "nullable": true
+            "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
+            "nullable": true
         },
         "labels": {
             "description": "Labels to associate with this issue; pass one or more label names to replace the set of labels on this issue; send an empty array to clear all labels from the issue; note that the labels are silently dropped for users without push access to the repository",
@@ -62,10 +62,10 @@
         },
         "assignee": {
             "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
-            "nullable":true
+            "nullable": true
         },
         "assignees": {
-          "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
+            "$ref": "https://opencatalogi.nl/simpleUser.schema.json"
         },
         "milestone": {
             "$ref": "https://opencatalogi.nl/milestone.schema.json"
@@ -98,7 +98,7 @@
         },
         "closed_by": {
             "$ref": "https://opencatalogi.nl/schemas/simpleUser.schema.json",
-            "nullable":true
+            "nullable": true
         },
         "author_association": {
             "type": "string",
