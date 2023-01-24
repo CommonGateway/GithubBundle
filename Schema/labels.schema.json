@@ -14,7 +14,7 @@
         },
         "url": {
             "type": "string",
-            "format": "uri"
+            "format": "url"
         },
         "name": {
             "type": "string"

@@ -1,0 +1,37 @@
+{
+    "$id": "https://opencatalogi.nl/licenseSimple.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "License Simple",
+    "description": "License Simple",
+    "type": "object",
+    "properties": {
+        "key": {
+            "type": "string",
+            "required": true
+        },
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "url": {
+            "type": "string",
+            "format": "url",
+            "nullable": true,
+            "required": true
+        },
+        "spdx_id": {
+            "type": "string",
+            "nullable": true,
+            "required": true
+        },
+        "node_id": {
+            "type": "string",
+            "required": true
+        },
+        "html_url": {
+            "type": "string",
+            "format": "url"
+        }
+    }
+}

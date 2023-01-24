@@ -7,11 +7,13 @@
   "properties": {
     "id": {
       "type": "integer",
-      "example": "1296269"
+      "example": "1296269",
+      "required": true
     },
     "node_id": {
       "type": "string",
-      "example": "MDEwOlJlcG9zaXRvcnkxMjk2MjY5"
+      "example": "MDEwOlJlcG9zaXRvcnkxMjk2MjY5",
+      "required": true
     },
     "name": {
       "type": "string",
@@ -21,157 +23,201 @@
     },
     "full_name": {
       "type": "string",
-      "example": "octocat/Hello-World"
+      "example": "octocat/Hello-World",
+      "required": true
     },
     "owner": {
-      "$ref": "https://opencatalogi.nl/simpleUser.schema.json"
+      "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
+      "required": true
     },
     "private": {
       "type": "boolean",
       "description": "Whether the repository is private or public.",
-      "default": true
+      "default": true,
+      "required": true
     },
     "html_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "description": {
       "type": "string",
       "nullable":true
     },
     "fork": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     },
     "url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "archive_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "assignees_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "blobs_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "branches_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "collaborators_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "comments_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "commits_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "compare_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "contents_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "contributors_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "deployments_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "downloads_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "events_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "forks_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "git_commits_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "git_refs_url": {
       "type": "string",
-      "format": "url"
+      "format": "url",
+      "required": true
     },
     "git_tags_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "git_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "issue_comment_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "issue_events_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "issues_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "keys_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "labels_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "languages_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "merges_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "milestones_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "notifications_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "pulls_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "releases_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "ssh_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "stargazers_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "statuses_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "subscribers_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "subscription_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "tags_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "teams_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "trees_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "clone_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "mirror_url": {
       "type": "string",
@@ -180,47 +226,64 @@
     },
     "hooks_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "svn_url": {
       "type": "string",
-      "format": "uri"
+      "format": "url",
+      "required": true
     },
     "homepage": {
       "type": "string",
       "nullable":true,
       "format": "uri"
     },
-    "organization": {},
+    "organization": {
+      "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
+      "nullable": true
+    },
     "language": {
       "type": "string",
       "nullable":true
     },
     "forks": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "forks_count": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "stargazers_count": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "watchers_count": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "size": {
       "type": "integer",
-      "description": "The size of the repository. Size is calculated hourly. When a repository is initially created, the size is 0."
+      "description": "The size of the repository. Size is calculated hourly. When a repository is initially created, the size is 0.",
+      "required": true
     },
     "default_branch": {
       "type": "string",
-      "description": "The default branch of the repository."
+      "description": "The default branch of the repository.",
+      "required": true
     },
     "open_issues": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "open_issues_count": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
+    },
+    "watchers": {
+      "type": "integer",
+      "required": true
     },
     "is_template": {
       "type": "boolean",
@@ -233,39 +296,47 @@
     "has_issues": {
       "type": "boolean",
       "description": "Whether issues are enabled.",
-      "default": "true"
+      "default": true,
+      "required": true
     },
     "has_projects": {
       "type": "boolean",
       "description": "Whether projects are enabled.",
-      "default": true
+      "default": true,
+      "required": true
     },
     "has_wiki": {
       "type": "boolean",
       "description": "Whether the wiki is enabled.",
-      "default": true
+      "default": true,
+      "required": true
     },
     "has_pages": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     },
     "has_downloads": {
       "type": "boolean",
       "description": "Whether downloads are enabled.",
-      "default": true
+      "default": true,
+      "required": true
     },
     "has_discussions": {
       "type": "boolean",
       "description": "Whether discussions are enabled.",
-      "default": false
+      "default": false,
+      "required": true
     },
     "archived": {
       "type": "boolean",
       "description": "Whether the repository is archived.",
-      "default": false
+      "default": false,
+      "required": true
     },
     "disabled": {
       "type": "boolean",
-      "description": "Returns whether or not this repository disabled."
+      "description": "Returns whether or not this repository disabled.",
+      "required": true
     },
     "visibility": {
       "type": "string",
@@ -324,10 +395,12 @@
       "default": true
     },
     "subscribers_count": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "network_count": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     }
   },
   "required": [

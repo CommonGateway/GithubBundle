@@ -15,17 +15,21 @@
             "nullable": true
         },
         "login": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "id": {
-            "type": "integer"
+            "type": "integer",
+            "required": true
         },
         "node_id": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "avatar_url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "gravatar_id": {
             "type": "string",
@@ -33,52 +37,65 @@
         },
         "url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "html_url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "followers_url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "following_url": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "gists_url": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "starred_url": {
             "type": "string"
         },
         "subscriptions_url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "organizations_url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "repos_url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "events_url": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "received_events_url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "type": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "site_admin": {
-            "type": "boolean"
+            "type": "boolean",
+            "required": true
         },
         "starred_at": {
-            "type": "string"
+            "type": "string",
+            "required": true
         }
     }
 }

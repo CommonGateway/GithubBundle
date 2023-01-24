@@ -34,11 +34,5 @@
             "nullable":true,
             "required":true
         }
-    },
-    "required": [
-        "diff_url",
-        "html_url",
-        "patch_url",
-        "url"
-    ]
+    }
 }

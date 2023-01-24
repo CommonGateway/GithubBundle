@@ -23,10 +23,5 @@
         "maintain": {
             "type": "boolean"
         }
-    },
-    "required": [
-        "admin",
-        "pull",
-        "push"
-    ]
+    }
 }

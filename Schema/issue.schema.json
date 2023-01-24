@@ -2,7 +2,7 @@
     "$id": "https://opencatalogi.nl/issue.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "title": "List Repository Issues",
+    "title": "Issue Schema",
     "description": "Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.",
     "type": "object",
     "properties": {
