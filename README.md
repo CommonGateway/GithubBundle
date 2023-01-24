@@ -1,4 +1,4 @@
-# GithubBundle
+# GithubIntegration
 An example repository for creating php symfony flex bundles
 
 
@@ -35,9 +35,9 @@ To create your own symfony bundle. You can copy this repository for a fast start
 4. Press the green button `Create repository from template`
 5. Update file names and namespace to your fitting 
    - Open composer.json, and change the name to your fitting. The first word should be the namespace and the second the name of your bundle. Check the autoload field to be set accordingly. Note: this is kebab-case. Also read: [naming your package](https://packagist.org/about#naming-your-package)
-   - Open PetStoreBundle.php and change the Bundle name and namespace. The namespace should be the same as your package name in composer.json but in CamelCase. So common-gateway/github-bundle becomes CommonGateway/GithubBundle
+   - Open PetStoreBundle.php and change the Bundle name and namespace. The namespace should be the same as your package name in composer.json but in CamelCase. So common-gateway/github-bundle becomes CommonGateway/GithubIntegration
    - Rename the /Service and /ActionHandler accordingly (or delete if not used).
-   - Rename the /DependencyInjection/GithubExtension.php to your BundleNameExtension.php
+   - Rename the /DependencyInjection/GithubIntegrationExtension.php to your BundleNameExtension.php
    - Rename the /Resources/config/services.yaml namespaces  
 
 ##### Adding schemas
@@ -93,7 +93,7 @@ Note: for docker add `docker-compose exec php` before all commands
    - Execute `composer require {full package name}:dev-main`
    - Docker users: restart your containers so symfony can recognize the new Bundle's namespace
 2. Open a php file where you want to use a class.
-   - Add the correct use statement (example `use CommonGateway\GithubBundle\Service\GithubService;`)
+   - Add the correct use statement (example `use CommonGateway\GithubIntegration\Service\GithubIntegrationService;`)
    - U can now use your class!
 
-In the common gateway, if you want to use your code when triggered by an event with a action, make sure the class of the action object is set as the handler name including the namespace. For example if I want to use the GithubService I can set the GithubHandler as `CommonGateway\GithubBundle\ActionHandler\GithubHandler`.
+In the common gateway, if you want to use your code when triggered by an event with a action, make sure the class of the action object is set as the handler name including the namespace. For example if I want to use the GithubIntegrationService I can set the GithubIntegrationHandler as `CommonGateway\GithubIntegration\ActionHandler\GithubIntegrationHandler`.

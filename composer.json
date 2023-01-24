@@ -1,5 +1,5 @@
 {
-    "name": "common-gateway/github",
+    "name": "common-gateway/github-integration-bundle",
     "description": "An example package for creating symfony flex bundles as plugins",
     "type": "symfony-bundle",
     "keywords": [
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CommonGateway\\Github\\": ""
+            "CommonGateway\\GithubIntegrationBundle\\": ""
         }
     },
     "scripts": {

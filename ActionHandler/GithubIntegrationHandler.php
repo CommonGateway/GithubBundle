@@ -1,16 +1,16 @@
 <?php
 
-namespace CommonGateway\GithubBundle\ActionHandler;
+namespace CommonGateway\GithubIntegration\ActionHandler;
 
-use CommonGateway\GithubBundle\Service\GithubService;
+use CommonGateway\GithubIntegration\Service\GithubIntegrationService;
 
-class GithubHandler
+class GithubIntegrationHandler
 {
-    private GithubService $githubService;
+    private GithubIntegrationService $githubIntegrationService;
 
-    public function __construct(GithubService $githubService)
+    public function __construct(GithubIntegrationService $githubIntegrationService)
     {
-        $this->githubService = $githubService;
+        $this->githubIntegrationService = $githubIntegrationService;
     }
 
     /**
@@ -45,6 +45,6 @@ class GithubHandler
      */
     public function run(array $data, array $configuration): array
     {
-        return $this->githubService->githubHandler($data, $configuration);
+        return $this->githubIntegrationService->githubIntegrationHandler($data, $configuration);
     }
 }
