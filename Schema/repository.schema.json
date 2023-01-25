@@ -238,7 +238,7 @@
     "homepage": {
       "type": "string",
       "format": "url",
-      "required": true
+      "nullable": true
     },
     "organization": {
       "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
@@ -293,7 +293,6 @@
     },
     "license": {
       "$ref": "https://opencatalogi.nl/licenseSimple.schema.json",
-      "nullable": true,
       "required": true
     },
     "topics": {
@@ -360,7 +359,7 @@
     "pushed_at": {
       "type": "string",
       "format": "date-time",
-      "required": true
+      "nullable": true
     },
     "created_at": {
       "type": "string",
