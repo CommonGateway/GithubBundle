@@ -43,7 +43,7 @@
     },
     "description": {
       "type": "string",
-      "nullable":true
+      "required": true
     },
     "fork": {
       "type": "boolean",
@@ -236,8 +236,8 @@
     },
     "homepage": {
       "type": "string",
-      "nullable":true,
-      "format": "uri"
+      "format": "url",
+      "nullable": true
     },
     "organization": {
       "$ref": "https://opencatalogi.nl/simpleUser.schema.json",
@@ -245,7 +245,7 @@
     },
     "language": {
       "type": "string",
-      "nullable":true
+      "nullable": true
     },
     "forks": {
       "type": "integer",
@@ -289,6 +289,10 @@
       "type": "boolean",
       "description": "Whether this repository acts as a template that can be used to generate new repositories.",
       "default": false
+    },
+    "license": {
+      "$ref": "https://opencatalogi.nl/licenseSimple.schema.json",
+      "required": true
     },
     "topics": {
       "type": "array"
@@ -351,17 +355,17 @@
     "pushed_at": {
       "type": "string",
       "format": "date-time",
-      "nullable":true
+      "nullable": true
     },
     "created_at": {
       "type": "string",
-      "nullable":true,
-      "format": "date-time"
+      "format": "date-time",
+      "required": true
     },
     "updated_at": {
       "type": "string",
       "format": "date-time",
-      "nullable":true
+      "nullable": true
     },
     "permissions": {
       "$ref": "https://opencatalogi.nl/permissions.schema.json"
