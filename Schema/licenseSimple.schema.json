@@ -1,31 +1,17 @@
 {
-    "$id": "https://opencatalogi.nl/pullRequest.schema.json",
+    "$id": "https://opencatalogi.nl/licenseSimple.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "title": "Pull Request",
+    "title": "License Simple",
+    "description": "License Simple",
     "type": "object",
     "properties": {
-        "merged_at": {
+        "key": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
-        },
-        "diff_url": {
-            "type": "string",
-            "format": "url",
-            "nullable": true,
             "required": true
         },
-        "html_url": {
+        "name": {
             "type": "string",
-            "format": "url",
-            "nullable": true,
-            "required": true
-        },
-        "patch_url": {
-            "type": "string",
-            "format": "url",
-            "nullable": true,
             "required": true
         },
         "url": {
@@ -33,6 +19,19 @@
             "format": "url",
             "nullable": true,
             "required": true
+        },
+        "spdx_id": {
+            "type": "string",
+            "nullable": true,
+            "required": true
+        },
+        "node_id": {
+            "type": "string",
+            "required": true
+        },
+        "html_url": {
+            "type": "string",
+            "format": "url"
         }
     }
 }

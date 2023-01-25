@@ -8,25 +8,31 @@
     "properties": {
         "url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "html_url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "labels_url": {
             "type": "string",
-            "format": "uri"
+            "format": "url",
+            "required": true
         },
         "id": {
-            "type": "integer"
+            "type": "integer",
+            "required": true
         },
         "node_id": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "number": {
             "type": "integer",
-            "description": "The number of the milestone."
+            "description": "The number of the milestone.",
+            "required": true
         },
         "state": {
             "type": "string",
@@ -35,73 +41,49 @@
                 "open",
                 "closed"
             ],
-            "default": "open"
+            "default": "open",
+            "required": true
         },
         "title": {
             "type": "string",
-            "description": "The title of the milestone."
+            "description": "The title of the milestone.",
+            "required": true
         },
         "description": {
-            "type": [
-                "string",
-                "null"
-            ]
+            "type": "string",
+            "required": true
         },
         "creator": {
-            "anyOf": [
-                {
-                    "type": "null"
-                },
-                {
-                    "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json"
-                }
-            ]
+            "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json",
+            "required": true
         },
         "open_issues": {
-            "type": "integer"
+            "type": "integer",
+            "required": true
         },
         "closed_issues": {
-            "type": "integer"
+            "type": "integer",
+            "required": true
         },
         "created_at": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "required": true
         },
         "updated_at": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "required": true
         },
         "closed_at": {
-            "type": [
-                "string",
-                "null"
-            ],
-            "format": "date-time"
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
         },
         "due_on": {
-            "type": [
-                "string",
-                "null"
-            ],
-            "format": "date-time"
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
         }
-    },
-    "required": [
-        "closed_issues",
-        "creator",
-        "description",
-        "due_on",
-        "closed_at",
-        "id",
-        "node_id",
-        "labels_url",
-        "html_url",
-        "number",
-        "open_issues",
-        "state",
-        "title",
-        "url",
-        "created_at",
-        "updated_at"
-    ]
+    }
 }

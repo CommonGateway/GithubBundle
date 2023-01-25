@@ -14,22 +14,18 @@
         },
         "url": {
             "type": "string",
-            "format": "uri"
+            "format": "url"
         },
         "name": {
             "type": "string"
         },
         "description": {
-            "type": [
-                "string",
-                "null"
-            ]
+            "type": "string",
+            "nullable": true
         },
         "color": {
-            "type": [
-                "string",
-                "null"
-            ]
+            "type": "string",
+            "nullable": true
         },
         "default": {
             "type": "boolean"
