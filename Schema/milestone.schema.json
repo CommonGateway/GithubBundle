@@ -51,12 +51,10 @@
         },
         "description": {
             "type": "string",
-            "nullable": true,
             "required": true
         },
         "creator": {
             "$ref": "https://vng.opencatalogi.nl/schemas/simpleUser.schema.json",
-            "nullable": true,
             "required": true
         },
         "open_issues": {
@@ -80,14 +78,12 @@
         "closed_at": {
             "type": "string",
             "format": "date-time",
-            "nullable": true,
-            "required": true
+            "nullable": true
         },
         "due_on": {
             "type": "string",
             "format": "date-time",
-            "nullable": true,
-            "required": true
+            "nullable": true
         }
     }
 }

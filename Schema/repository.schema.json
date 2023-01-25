@@ -43,7 +43,6 @@
     },
     "description": {
       "type": "string",
-      "nullable": true,
       "required": true
     },
     "fork": {
@@ -239,7 +238,6 @@
     "homepage": {
       "type": "string",
       "format": "url",
-      "nullable": true,
       "required": true
     },
     "organization": {
@@ -248,8 +246,7 @@
     },
     "language": {
       "type": "string",
-      "nullable": true,
-      "required": true
+      "nullable": true
     },
     "forks": {
       "type": "integer",
@@ -363,20 +360,17 @@
     "pushed_at": {
       "type": "string",
       "format": "date-time",
-      "nullable": true,
       "required": true
     },
     "created_at": {
       "type": "string",
       "format": "date-time",
-      "nullable": true,
       "required": true
     },
     "updated_at": {
       "type": "string",
       "format": "date-time",
-      "nullable": true,
-      "required": true
+      "nullable": true
     },
     "permissions": {
       "$ref": "https://opencatalogi.nl/permissions.schema.json"

@@ -33,8 +33,7 @@
         },
         "gravatar_id": {
             "type": "string",
-            "nullable": true,
-            "required": true
+            "nullable": true
         },
         "url": {
             "type": "string",
